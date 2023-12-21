@@ -290,9 +290,9 @@ static const u32 sPokedexPlusHGSS_ScreenSearchHoenn_Tilemap[] = INCBIN_U32("grap
 static const u32 sPokedexPlusHGSS_ScreenSearchNational_Tilemap[] = INCBIN_U32("graphics/pokedex/hgss/tilemap_search_screen_national.bin.lz");
 
 #define SCROLLING_MON_X 146
-#define HGSS_DECAPPED FALSE
-#define HGSS_DARK_MODE FALSE
-#define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES FALSE
+#define HGSS_DECAPPED TRUE
+#define HGSS_DARK_MODE TRUE
+#define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES TRUE
 
 // For scrolling search parameter
 #define MAX_SEARCH_PARAM_ON_SCREEN   6
@@ -5340,7 +5340,7 @@ static bool8 CalculateMoves(void)
         if (j >= NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
         {
             numTutorMoves++;
-            
+
             sStatsMoves[movesTotal] = move;
             movesTotal++;
         }
@@ -6497,7 +6497,7 @@ static u8 PrintPreEvolutions(u8 taskId, u16 species)
             {
                 preEvolutionOne = i;
                 numPreEvolutions += 1;
-                
+
                 if (GetSpeciesFormChanges(species) != NULL
                  && GetSpeciesFormChanges(species)->method == FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM)
                 {
