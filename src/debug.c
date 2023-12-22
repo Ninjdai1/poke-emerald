@@ -459,7 +459,7 @@ static const u8 sDebugText_Fill[] =             _("Fill PC/Pockets…{CLEAR_TO 1
 static const u8 sDebugText_Sound[] =            _("Sound…{CLEAR_TO 110}{RIGHT_ARROW}");
 static const u8 sDebugText_Cancel[] =           _("Cancel");
 // Script menu
-static const u8 sDebugText_Util_Script_1[] =               _("Script 1");
+static const u8 sDebugText_Util_Script_1[] =               _("Debug Room");
 static const u8 sDebugText_Util_Script_2[] =               _("Script 2");
 static const u8 sDebugText_Util_Script_3[] =               _("Script 3");
 static const u8 sDebugText_Util_Script_4[] =               _("Script 4");
